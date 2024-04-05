@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/assets/logo-xuF8oJBL.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+    <title>Azid Muhammad | Portfolio</title>
+    <div class="cursor-style"></div>
+    <script type="module" crossorigin src="/assets/index-DGYJouwM.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CvnHoKKz.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <section id="experience"></section>
+    <section id="project"></section>
+    <section id="about"></section>
+    <section id="contact"></section>
+    <footer id="footer"></footer>
+
+    <script>
+      const cursorStyle = document.querySelector('.cursor-style')
+      let timer
+
+      function randomizeBackground() {
+        return Math.round(Math.random() * Math.ceil(255))
+      }
+
+      window.addEventListener('mousemove', (e) => {
+        clearTimeout(timer)
+
+        timer = setTimeout(() => {
+          cursorStyle.style.backgroundColor = `grey)`
+          cursorStyle.style.border = `grey)`
+        }, 100)
+
+        cursorStyle.style.top = `${e.clientY}px`
+        cursorStyle.style.left = `${e.clientX}px`
+      })
+    </script>
+  </body>
+</html>
