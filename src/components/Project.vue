@@ -68,7 +68,7 @@
     <div class="category-images" :class="{ transitioning: isTransitioning }">
       <div class="image-container">
         <div v-for="(image, index) in selectedCategory.images" :key="index" class="image">
-          <img :src="image.src" :alt="image.alt" />
+          <img :src="require(`../src/assets/image/${image.src}`)" :alt="image.caption" />
           <div class="caption">{{ image.caption }}</div>
         </div>
       </div>
@@ -88,15 +88,15 @@ export default {
           name: 'All',
           images: [
             {
-              src: '/assets/figma.png',
+              src: 'figma.png',
               caption: 'go-kel app design figma project'
             },
             {
-              src: '/assets/poke.png',
+              src: 'poke.png',
               caption: 'pokelapak top up website'
             },
             {
-              src: '/assets/fog.jpg',
+              src: 'fog.jpg',
               caption: 'freedom of games (games download website)'
             }
           ]
@@ -105,11 +105,11 @@ export default {
           name: 'Web Development',
           images: [
             {
-              src: '/assets/poke.png',
+              src: 'poke.png',
               caption: 'pokelapak top up website'
             },
             {
-              src: '/assets/fog.jpg',
+              src: 'fog.jpg',
               caption: 'freedom of games (games download website)'
             }
           ],
@@ -119,7 +119,7 @@ export default {
           name: 'UI And UX',
           images: [
             {
-              src: '/assets/figma.png',
+              src: 'figma.png',
               caption: 'go-kel app design figma project'
             }
           ]
