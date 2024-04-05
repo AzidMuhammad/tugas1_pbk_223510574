@@ -68,9 +68,9 @@
     <div class="category-images" :class="{ transitioning: isTransitioning }">
       <div class="image-container">
         <div v-for="(image, index) in selectedCategory.images" :key="index" class="image">
-          <img :src="require(`../src/assets/image/figma.png`)" :alt="image.caption" />
-          <img :src="require(`../src/assets/image/poke.png`)" :alt="image.caption" />
-          <img :src="require(`../src/assets/image/fog.jpg`)" :alt="image.caption" />
+          <img src="@/assets/image/figma.png" />
+          <img src="@/assets/image/poke.png" />
+          <img src="@/assets/image/fog.jpg" />
           <div class="caption">{{ image.caption }}</div>
         </div>
       </div>
