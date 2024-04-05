@@ -88,15 +88,15 @@ export default {
           name: 'All',
           images: [
             {
-              src: '/assets/figma.png',
+              src: '/dist/assets/figma.png',
               caption: 'go-kel app design figma project'
             },
             {
-              src: '/assets/poke.png',
+              src: '/dist/assets/poke.png',
               caption: 'pokelapak top up website'
             },
             {
-              src: '/assets/fog.jpg',
+              src: '/dist/assets/fog.jpg',
               caption: 'freedom of games (games download website)'
             }
           ]
@@ -105,11 +105,11 @@ export default {
           name: 'Web Development',
           images: [
             {
-              src: '/assets/poke.png',
+              src: '/dist/assets/poke.png',
               caption: 'pokelapak top up website'
             },
             {
-              src: '/assets/fog.jpg',
+              src: '/dist/assets/fog.jpg',
               caption: 'freedom of games (games download website)'
             }
           ],
@@ -119,7 +119,7 @@ export default {
           name: 'UI And UX',
           images: [
             {
-              src: '/assets/figma.png',
+              src: '/dist/assets/figma.png',
               caption: 'go-kel app design figma project'
             }
           ]
