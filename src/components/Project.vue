@@ -67,10 +67,8 @@
     </div>
     <div class="category-images" :class="{ transitioning: isTransitioning }">
       <div class="image-container">
-        <div v-for="(image) in selectedCategory.images" class="image">
-          <img src="@/assets/image/figma.png" />
-          <img src="@/assets/image/poke.png" />
-          <img src="@/assets/image/fog.jpg" />
+        <div v-for="(image, index) in selectedCategory.images" :key="index" class="image">
+          <img :src="image.src" :alt="image.alt" />
           <div class="caption">{{ image.caption }}</div>
         </div>
       </div>
@@ -90,15 +88,15 @@ export default {
           name: 'All',
           images: [
             {
-              src: '../src/assets/image/figma.png',
+              src: './src/assets/image/figma.png',
               caption: 'go-kel app design figma project'
             },
             {
-              src: '../src/assets/image/poke.png',
+              src: './src/assets/image/poke.png',
               caption: 'pokelapak top up website'
             },
             {
-              src: '../src/assets/image/fog.jpg',
+              src: './src/assets/image/fog.jpg',
               caption: 'freedom of games (games download website)'
             }
           ]
@@ -107,11 +105,11 @@ export default {
           name: 'Web Development',
           images: [
             {
-              src: '../src/assets/image/poke.png',
+              src: './src/assets/image/poke.png',
               caption: 'pokelapak top up website'
             },
             {
-              src: '../src/assets/image/fog.jpg',
+              src: './src/assets/image/fog.jpg',
               caption: 'freedom of games (games download website)'
             }
           ],
@@ -121,7 +119,7 @@ export default {
           name: 'UI And UX',
           images: [
             {
-              src: '../src/assets/image/figma.png',
+              src: './src/assets/image/figma.png',
               caption: 'go-kel app design figma project'
             }
           ]
