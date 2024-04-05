@@ -68,7 +68,9 @@
     <div class="category-images" :class="{ transitioning: isTransitioning }">
       <div class="image-container">
         <div v-for="(image, index) in selectedCategory.images" :key="index" class="image">
-          <img :src="require(`../src/assets/image/${image.src}`)" :alt="image.caption" />
+          <img :src="require(`../src/assets/image/figma.png`)" :alt="image.caption" />
+          <img :src="require(`../src/assets/image/poke.png`)" :alt="image.caption" />
+          <img :src="require(`../src/assets/image/fog.jpg`)" :alt="image.caption" />
           <div class="caption">{{ image.caption }}</div>
         </div>
       </div>
@@ -88,15 +90,15 @@ export default {
           name: 'All',
           images: [
             {
-              src: 'figma.png',
+              src: '../src/assets/image/figma.png',
               caption: 'go-kel app design figma project'
             },
             {
-              src: 'poke.png',
+              src: '../src/assets/image/poke.png',
               caption: 'pokelapak top up website'
             },
             {
-              src: 'fog.jpg',
+              src: '../src/assets/image/fog.jpg',
               caption: 'freedom of games (games download website)'
             }
           ]
@@ -105,11 +107,11 @@ export default {
           name: 'Web Development',
           images: [
             {
-              src: 'poke.png',
+              src: '../src/assets/image/poke.png',
               caption: 'pokelapak top up website'
             },
             {
-              src: 'fog.jpg',
+              src: '../src/assets/image/fog.jpg',
               caption: 'freedom of games (games download website)'
             }
           ],
@@ -119,7 +121,7 @@ export default {
           name: 'UI And UX',
           images: [
             {
-              src: 'figma.png',
+              src: '../src/assets/image/figma.png',
               caption: 'go-kel app design figma project'
             }
           ]
